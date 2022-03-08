@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+section{
+  width: 1400px;
+  height: 775px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+section .navigation{
+  width: 100%;
+  height: 10%;
+  margin-top: 20px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+section .navigation .nav_icon{
+  width: 20%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+section .navigation .nav_icon img{
+  width: 110px;
+  height: 20px;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+section .navigation .nav_content{
+  width: 60%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 30px ;
+  
+}
+section .navigation .nav_content a{
+  text-decoration: none;
+  font-size: 15px;
+  margin: 20px;
+  color: black;
+}
+section .navigation .nav_content a:hover{
+  color: rgb(251, 146, 8);;
+}
+section .navigation .nav_button{
+  width: 20%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+section .navigation .nav_button button{
+  width: 150px;
+  height: 50px;
+  margin: 10%;
+  margin-left: 20%;
+  background-color: rgb(251, 146, 8);
+  border: rgb(251, 146, 8) 1px solid;
+  color: white;
+  border-radius: 20px;
+}
+section .navigation .nav_button button:hover{
+  background-color: white;
+  color: black;
+  border: orange 2px solid;
+}
+.container {
+  width: 100%;
+  height: 90%;
+  margin: auto;
+  position: relative;
+  padding: 10%;
+  padding-top: 10px;
+  background: #fff;
+}
+
+.accordion {
+  position: relative;
+  width: 350px;
+  margin-left: 40px;
+}
+
+.title {
+  margin-top: 20%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.content-accordion {
+  margin-top: 35px;
+  margin-left: 10%;
+}
+
+.question-answer {
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.question {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+.question h3{
+  font-size: 20px;
+}
+
+.accordion-img {
+  position: relative;
+  width: 320px;
+}
+
+.title-question {
+  margin: 1.4rem 0rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.up-icon {
+  display: none;
+}
+
+.answer {
+  width: 700px;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  display: none;
+}
+.show-text .answer {
+  display: block;
+}
+
+.show-text .up-icon {
+  display: inline;
+}
+
+.show-text .down-icon {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .accordion {
+    width: 920px;
+    height: 0;
+    display: flex;
+  }
+
+  .accordion-img {
+    position: relative;
+    width: 420px;
+    top: 88px;
+  }
+
+  .question-answer {
+    width: 380px;
+  }
+
+  .content-accordion {
+    margin-top: 85px;
+  }
+
+  .title {
+    margin-top: 50px;
+    font-size: 3rem;
+  }
+}
